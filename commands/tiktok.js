@@ -46,7 +46,7 @@ async function tiktok(client, message){
                       ❤️ *Likes:*  ${like}\n 
                       💬 *Comments:* ${comment}\n 
                       🔗 *Share:* ${share}\n\n 
-                        ᴘᴏᴡᴇʀᴇᴅ ʙʏ jєαn-s dєv | σвítσ dєv ! 😉`);
+                        Weedtech | DevWeed ! 😉`);
 
                       await client.sendMessage(remoteJid, {
                         video: { url: videoUrl },
