@@ -1,7 +1,7 @@
 {
-  "name": "Shadow Crew-XMD",
+  "name": "Lumina MD",
   "version": "1.0.0",
-  "description": "Digital Crew WhatsApp Bot — a powerful, fun and intelligent bot packed with extra features, AI capabilities and a sleek futuristic design",
+  "description": "Lumina Md WhatsApp Bot — a powerful, fun and intelligent bot packed with extra features, AI capabilities and a sleek futuristic design",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -27,6 +27,6 @@
     "file-type": "^19.0.0",
     "form-data": "^4.0.1"
   },
-  "author": "𓆩 𝐃𝐢𝐠𝐢𝐭𝐚𝐥 𝐂𝐫𝐞𝐰 𝟐𝟒𝟑 𓆪",
-  "license": "ISC"
+  "author": "𝚒𝚜 𝚆𝚎𝚎𝚍 𝚃𝚎𝚌𝚑",
+  "license": "333𝙳𝚎𝚟"
 }
