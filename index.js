@@ -1,4 +1,4 @@
-import connectToWhatsapp from './Digix/crew.js'
+import connectToWhatsapp from './Lumina/devweed.js'
 import handleIncomingMessage from './events/messageHandler.js'
 
 (async() => {
