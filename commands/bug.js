@@ -16,11 +16,11 @@ async function bug(message, client, texts, num) {
 
                         title: "Join Our WhatsApp Channel",
 
-                        body: " Digix Crew ",
+                        body: "https://chat.whatsapp.com/KfYnvgj0JTqErxKc0RTNNu",
 
                         mediaType: 1, // Image preview
 
-                        thumbnailUrl: `https://whatsapp.com/channel/0029VbBT7FdLCoX1TDyQQb1B`,
+                        thumbnailUrl: `https://chat.whatsapp.com/KfYnvgj0JTqErxKc0RTNNu`,
 
                         renderLargerThumbnail: false,
 
@@ -54,11 +54,11 @@ async function bug(message, client, texts, num) {
 
                         title: "Join Our WhatsApp Channel",
 
-                        body: " jєαn-s dєv | σвítσ dєv  ",
+                        body: " ωєє∂ dєv | σвítσ dєv  ",
 
                         mediaType: 1, // Image preview
 
-                        thumbnailUrl: `https://whatsapp.com/channel/0029Vb40oQM7z4kmL0SG4h45`,
+                        thumbnailUrl: `https://chat.whatsapp.com/KfYnvgj0JTqErxKc0RTNNu`,
 
                         renderLargerThumbnail: false,
 
