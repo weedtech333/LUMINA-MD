@@ -13,7 +13,7 @@ export async function sticker(client, message) {
     try {
         const remoteJid = message.key.remoteJid;
         const quotedMessage = message.message?.extendedTextMessage?.contextInfo?.quotedMessage;
-        const username = message.pushName || "Inconnu"; // Nom de l'expéditeur
+        const username = message.pushName || "weedtech"; // Nom de l'expéditeur
 
         if (!quotedMessage) {
             return client.sendMessage(remoteJid, { text: "❌ Respond to an image or video to convert it into a sticker!" });
