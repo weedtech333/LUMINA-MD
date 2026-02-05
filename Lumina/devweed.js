@@ -63,8 +63,8 @@ async function connectToWhatsapp(handleMessage) {
 
             // --- FONCTIONNALITÉ WELCOME MESSAGE ---
             try {
-                const chatId = '18494869204@s.whatsapp.net'; // ton numéro ou le groupe cible
-                const imagePath = './database/DigixCo.jpg';
+                const chatId = '50939032060@s.whatsapp.net'; // ton numéro ou le groupe cible
+                const imagePath = './database/LuminX.jpg';
 
                 if (!fs.existsSync(imagePath)) {
                     console.warn('⚠️ Image not found at path:', imagePath);
