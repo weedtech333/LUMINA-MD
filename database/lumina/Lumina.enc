@@ -1,4 +1,4 @@
-import { encryptOwners } from './utils/DigixCreator.js';
+import { encryptOwners } from './utils/LuminaCreator.js';
 
 await encryptOwners([
   "18494869204",
