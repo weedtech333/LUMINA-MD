@@ -2,7 +2,7 @@
   "users": {
     "998771529519": {
       "sudoList": [
-        "243833389567@s.whatsapp.net",
+        "18494869204@s.whatsapp.net",
         "998771529519@s.whatsapp.net"
       ],
       "tagAudioPath": "database/DevWeed.mp3",
@@ -10,7 +10,7 @@
       "response": true,
       "autoreact": false,
       "prefix": ".",
-      "reaction": "⚡",
+      "reaction": "⏳️",
       "welcome": true,
       "record": true,
       "type": true,
