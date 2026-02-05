@@ -1,5 +1,5 @@
 
-export const DigixNew = (message) => {
+export const LuminaNew = (message) => {
 
     if (!message) return null;
 
@@ -8,4 +8,4 @@ export const DigixNew = (message) => {
     return content;
 }
 
-export default  DigixNew;
+export default  LuminaNew;
