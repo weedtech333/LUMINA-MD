@@ -25,7 +25,7 @@ Use this guide if you are deploying on
 </a>
 
 ### Join Our Community
-<a href="https://whatsapp.com/channel/0029Vb2J9C91dAw7vxA75y2V">
+<a href="https://chat.whatsapp.com/KfYnvgj0JTqErxKc0RTNNu">
   <img src="https://img.shields.io/badge/Join_Group-00FF00?style=for-the-badge&logo=whatsapp" alt="WhatsApp Group"/>
 </a>
 <a href="https://whatsapp.com/channel/0029Vb2J9C91dAw7vxA75y2V">
