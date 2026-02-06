@@ -29,7 +29,22 @@ Use this guide if you are deploying on
 
 ---
 
+## 📞 Contact & Support
 
+### Project Owner: Erfan Ahmad
+<a href='https://wa.me/+50939032060?text=*HELLO+WEEEDTECH*' target="_blank">
+  <img alt='WhatsApp' src='https://img.shields.io/badge/Contact_Owner-0033CC?style=for-the-badge&logo=whatsapp&logoColor=white'/>
+</a>
+
+### Join Our Community
+<a href="https://whatsapp.com/channel/0029Vb2J9C91dAw7vxA75y2V">
+  <img src="https://img.shields.io/badge/Join_Group-00FF00?style=for-the-badge&logo=whatsapp" alt="WhatsApp Group"/>
+</a>
+<a href="https://whatsapp.com/channel/0029Vb2J9C91dAw7vxA75y2V">
+  <img src="https://img.shields.io/badge/Join_Channel-FF69B4?style=for-the-badge&logo=whatsapp" alt="WhatsApp Channel"/>
+</a>
+
+</div>
 
 ### 📜 License
 
