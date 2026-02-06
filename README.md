@@ -39,6 +39,27 @@ Use this guide if you are deploying on
     <img src="https://img.shields.io/badge/-TELEGRAM%20CHANNEL-0088cc?style=for-the-badge&logo=telegram&logoColor=white" height="35" alt="Telegram"/>
   </a>
   <a 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### 📜 License
 
 MIT © 𝐖𝐞𝐞𝐝 𝐓𝐞𝐜𝐡 
