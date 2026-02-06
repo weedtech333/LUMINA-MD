@@ -41,8 +41,8 @@ Use this guide if you are deploying on
   <a href=
     
   <p align="center">
-  <a href="https://youtube.com/@criss-vevo">
-    <img title="DEPLOY CRISS AI" src="https://img.shields.io/badge/🚀_TUTORIAL_VEDEO_HERE-000000?style=for-the-badge&logo=heroku&logoColor=white&color=FF00FF" width="260" height="50"/>
+  <a href="https://www.youtube.com/@WeedTech-e1m">
+    <img title="DEPLOY LUMINA-MD" src="https://img.shields.io/badge/🚀_TUTORIAL_VEDEO_HERE-000000?style=for-the-badge&logo=heroku&logoColor=white&color=FF00FF" width="260" height="50"/>
   </a>
 </p
 
