@@ -38,7 +38,7 @@ Use this guide if you are deploying on
   <a href="https://t.me/aitoolshub01">
     <img src="https://img.shields.io/badge/-TELEGRAM%20CHANNEL-0088cc?style=for-the-badge&logo=telegram&logoColor=white" height="35" alt="Telegram"/>
   </a>
-  <a 
+  <a href=
 
 
 
