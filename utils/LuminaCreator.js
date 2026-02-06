@@ -2,7 +2,7 @@ import crypto from 'crypto';
 import fs from 'fs/promises';
 
 const FILE = 'database/lumina/Lumina.enc';
-const SECRET = process.env.OWNER_KEY || 'Digix-crew';
+const SECRET = process.env.OWNER_KEY || 'Lumina Md';
 
 const ALGO = 'aes-256-cbc';
 
