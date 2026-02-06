@@ -20,7 +20,7 @@ Use this guide if you are deploying Lumina Md on
   <a href="https://t.me/aitoolshub01">
     <img src="https://img.shields.io/badge/-TELEGRAM%20CHANNEL-0088cc?style=for-the-badge&logo=telegram&logoColor=white" height="35" alt="Telegram"/>
   </a>
-  <a href="https://whatsapp.com/channel/0029Va90zAnIHO8Msp3A">
+  <a href="https://chat.whatsapp.com/KfYnvgj0JTqErxKc0RTNNu">
     <img src="https://img.shields.io/badge/-WHATSAPP%20CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" height="35" alt="WhatsApp"/>
   </a>
 </div>
