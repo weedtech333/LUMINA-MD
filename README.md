@@ -1,7 +1,7 @@
 <div align="center">
 
 <h1 style="font-family:'Orbitron', monospace; color:#00ffea; animation:scroll 8s linear infinite; white-space:nowrap;">
-☣️ SILA-X-WEED-BOT ☣️
+😍𝐋𝐔𝐌𝐈𝐍𝐀 𝐌𝐃😍
 </h1>
 
 <img src="https://files.catbox.moe/ql854j.jpg" width="160" style="border-radius:20px; box-shadow:0 0 40px #00ffea;" />
