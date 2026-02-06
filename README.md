@@ -28,10 +28,7 @@ Use this guide if you are deploying on
 </div>
 
 ---
-
-## 📞 Contact & Support
-
-### Project Owner: Erfan Ahmad
+### Project Owner: Dev Weed
 <a href='https://wa.me/+50939032060?text=*HELLO+WEEEDTECH*' target="_blank">
   <img alt='WhatsApp' src='https://img.shields.io/badge/Contact_Owner-0033CC?style=for-the-badge&logo=whatsapp&logoColor=white'/>
 </a>
