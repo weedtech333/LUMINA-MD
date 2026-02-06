@@ -19,7 +19,6 @@ Use this guide if you are deploying on
 
 ## 🔗 Connect With Us
 
----
 ### Project Owner: Dev Weed
 <a href='https://wa.me/+50939032060?text=*HELLO+WEEEDTECH*' target="_blank">
   <img alt='WhatsApp' src='https://img.shields.io/badge/Contact_Owner-0033CC?style=for-the-badge&logo=whatsapp&logoColor=white'/>
@@ -39,10 +38,7 @@ Use this guide if you are deploying on
   <a href="https://t.me/aitoolshub01">
     <img src="https://img.shields.io/badge/-TELEGRAM%20CHANNEL-0088cc?style=for-the-badge&logo=telegram&logoColor=white" height="35" alt="Telegram"/>
   </a>
-  <a href="https://whatsapp.com/channel/0029Vb2J9C91dAw7vxA75y2V">
-    <img src="https://img.shields.io/badge/-WHATSAPP%20CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" height="35" alt="WhatsApp"/>
-  </a>
-</div>
+  <a 
 ### 📜 License
 
 MIT © 𝐖𝐞𝐞𝐝 𝐓𝐞𝐜𝐡 
