@@ -12,7 +12,7 @@
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code:wght@700&size=32&duration=6000&color=00FF00&background=000000&center=true&vCenter=true&width=900&lines=LUMINA+MD+THE+BEST+BOT+WHATSAPP+100%2B+FEATURES" alt="Typing Animation">
 </h1>
 
-## <a name="panel-setup"></a>💻Panel Deployment Guide⏳️
+## <a name="panel-setup"></a>💻Panel Deployment Guide
 
 Use this guide if you are deploying on
 **Optilink,Pterodactyl,Katabump, Render, or GitHub**.
