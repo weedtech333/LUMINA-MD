@@ -20,7 +20,7 @@ Use this guide if you are deploying on
 ## 🔗 Connect With Us
 
 ### Project Owner: Dev Weed
-<a href='https://wa.me/+50939032060?text=*Hello+DevWeed👋*' target="_blank">
+<a href='https://wa.me/+50939032060?text=*_Hello+DevWeed👋_*' target="_blank">
   <img alt='WhatsApp' src='https://img.shields.io/badge/Contact_Owner-0033CC?style=for-the-badge&logo=whatsapp&logoColor=white'/>
 </a>
 
