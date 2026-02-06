@@ -4,7 +4,7 @@
 😍𝐋𝐔𝐌𝐈𝐍𝐀 𝐌𝐃😍
 </h1>
 
-<img src="https://files.catbox.moe/ql854j.jpg" width="160" style="border-radius:20px; box-shadow:0 0 40px #00ffea;" />
+<img src="https://files.catbox.moe/z7047y.jpg" width="160" style="border-radius:20px; box-shadow:0 0 40px #00ffea;" />
 
 <p style="font-family:'Share Tech Mono', monospace; color:#9afff6;">
 A Simple Yet Complicated WhatsApp Bot<br/>
