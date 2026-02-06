@@ -12,7 +12,7 @@ export async function tagall(client, message) {
         const text = participants.map(user => `@${user.split('@')[0]}`).join(' \n')
 
         await client.sendMessage(remoteJid, {
-            text: `╭─⌈ 🚀 Digital Crew Broadcast ⌋\n│\n${text}\n│\n╰─⌊ Powered by DC243 ⌉`,
+            text: `╭─⌈ 🚀 Digital Crew Broadcast ⌋\n│\n${text}\n│\n╰─⌊ Powered by DevWeed ⌉`,
             mentions: participants
         })
 
@@ -32,7 +32,7 @@ export async function tagadmin(client, message) {
         
         if (admins.length === 0) return
 
-        const text = `╭─⌈ 🛡️ Digital Crew Alert ⌋\n│ Admin Alert\n│\n${admins.map(user => `@${user.split('@')[0]}`).join('\n')}\n│\n╰─⌊ DC243 Control ⌉`
+        const text = `╭─⌈⚠️ Lumina Md Alert ⌋\n│ Admin Alert\n│\n${admins.map(user => `@${user.split('@')[0]}`).join('\n')}\n│\n╰─⌊ DC243 Control ⌉`
 
         await client.sendMessage(remoteJid, { text, mentions: admins })
 
@@ -52,7 +52,7 @@ export async function respond(client, message) {
         const lid = client.user?.lid.split(':')[0]
         if (messageBody.includes(`@${lid}`)) {
             await client.sendMessage(remoteJid, {
-                audio: { url: "database/DigiX.mp3" },
+                audio: { url: "database/DevWeed.mp3" },
                 mimetype: "audio/mp4",
                 ptt: true,
                 contextInfo: { 
@@ -75,7 +75,7 @@ export async function tag(client, message) {
         const messageBody = message.message?.conversation || message.message?.extendedTextMessage?.text || ""
         const commandAndArgs = messageBody.slice(1).trim()
         const parts = commandAndArgs.split(/\s+/)
-        const text = parts.slice(1).join(' ') || 'Digital Crew Alert'
+        const text = parts.slice(1).join(' ') || 'Lumina Md Alert'
 
         const quotedMessage = message.message?.extendedTextMessage?.contextInfo?.quotedMessage
         if (quotedMessage) {
