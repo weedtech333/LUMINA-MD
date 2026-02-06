@@ -9,6 +9,6 @@
 <p style="font-family:'Share Tech Mono', monospace; color:#9afff6;">
 
 
-## <a name="panel-setup"></a>💻 Panel Deployment Guide⏳️
+## <a name="panel-setup"></a>💻Panel Deployment Guide⏳️
 
 Use this guide if you are deploying on **Optilink,Pterodactyl,Katabump, Render, or GitHub**.
