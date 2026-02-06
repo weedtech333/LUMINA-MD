@@ -20,7 +20,7 @@ Use this guide if you are deploying Lumina Md on
   <a href="https://t.me/aitoolshub01">
     <img src="https://img.shields.io/badge/-TELEGRAM%20CHANNEL-0088cc?style=for-the-badge&logo=telegram&logoColor=white" height="35" alt="Telegram"/>
   </a>
-  <a href="https://chat.whatsapp.com/KfYnvgj0JTqErxKc0RTNNu">
+  <a href="https://whatsapp.com/channel/0029Vb2J9C91dAw7vxA75y2V">
     <img src="https://img.shields.io/badge/-WHATSAPP%20CHANNEL-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" height="35" alt="WhatsApp"/>
   </a>
 </div>
@@ -31,4 +31,4 @@ Use this guide if you are deploying Lumina Md on
 
 ### 📜 License
 
-MIT © Godszea
+MIT © 𝐖𝐞𝐞𝐝 𝐓𝐞𝐜𝐡 
