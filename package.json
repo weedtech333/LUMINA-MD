@@ -13,8 +13,8 @@
     "bot",
     "automation",
     "ai",
-    "digix",
-    "crew"
+    "lumina",
+    "md"
   ],
   "dependencies": {
     "baileys": "npm:baileys@latest",
