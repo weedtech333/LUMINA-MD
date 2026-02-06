@@ -121,7 +121,7 @@ menu += `┗━━━━━━━━━━━━━━━
           caption: stylizedChar(menu),
           contextInfo: {
             participant: "0@s.whatsapp.net",
-            remoteJid: "status@broadcast",
+            remoteJid: "120363407561123100@newsletter",
             quotedMessage: { conversation: "Is Weed Tech" },
             isForwarded: true
           }
