@@ -15,7 +15,7 @@ export async function prem(client, message) {
 
     const currentYear = today.getFullYear();
 
-    const owner = "꧁𝐑𝐞𝐝𝐢𝐱꧁𓂀꧂𝐊𝐚𝐫𝐚꧂ i ? ";
+    const owner = " ☆𝐖𝐞𝐞𝐝 𝐓𝐞𝐜𝐡☆ ? ";
 
     const username = message.pushName || "Unknown";
 
@@ -24,7 +24,7 @@ export async function prem(client, message) {
 
     const t = ` 
 ╭─────────────────╮
-     REDIX-KARA XMD
+     𝐋𝐔𝐌𝐈𝐍𝐀 𝐌𝐃
 ╰─────────────────╯
 ╭─────────────────╮
 │ ❏Prefix : ${prefix}  
@@ -33,7 +33,7 @@ export async function prem(client, message) {
 │ ❏Date : ${currentDate}/${currentMonth}/${currentYear} 
 │ ❏Version : 3
 │ ❏Plugins : 2
-│ ❏Type : X-MD 
+│ ❏Type : MD 
 ╰─────────────────╯
 
 ╭────[ PREMIUM CMDS ]─────╮
@@ -43,7 +43,7 @@ export async function prem(client, message) {
 │ 💎⬢ disconnect 221xxxxx        
 ╰─────────────────╯        
 
-made by ꧁𝐑𝐞𝐝𝐢𝐱꧁𓂀꧂𝐊𝐚𝐫𝐚꧂ 
+© made by ☆𝐖𝐞𝐞𝐝 𝐃𝐞𝐯☆
     `
 ;
 
@@ -59,7 +59,7 @@ made by ꧁𝐑𝐞𝐝𝐢𝐱꧁𓂀꧂𝐊𝐚𝐫𝐚꧂
 
             remoteJid: 'status@broadcast',
 
-            quotedMessage: { conversation:"꧁𝐑𝐞𝐝𝐢𝐱꧁𓂀꧂𝐊𝐚𝐫𝐚꧂ "}, 
+            quotedMessage: { conversation:" ☆𝐖𝐞𝐞𝐝 𝐓𝐞𝐜𝐡☆ "}, 
 
             isForwarded: true,
         },
