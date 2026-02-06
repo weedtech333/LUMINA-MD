@@ -11,4 +11,4 @@
 
 ## <a name="panel-setup"></a>💻Panel Deployment Guide⏳️
 
-Use this guide if you are deploying on **Optilink,Pterodactyl,Katabump, Render, or GitHub**.
+Use this guide if you are deploying Lumina Md on **Optilink,Pterodactyl,Katabump, Render, or GitHub**.
