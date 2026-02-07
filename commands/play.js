@@ -1,63 +1,78 @@
 import stylizedChar from "../utils/fancy.js"
-import axios from 'axios'
+import axios from "axios"
 
 export async function play(message, client) {
     const remoteJid = message.key.remoteJid
-    const rawText = message.message?.conversation || message.message?.extendedTextMessage?.text || ''
-    const text = rawText.toLowerCase().trim()
+
+    const rawText =
+        message.message?.conversation ||
+        message.message?.extendedTextMessage?.text ||
+        ""
+
+    const query = rawText.split(/\s+/).slice(1).join(" ").trim()
+
+    if (!query) {
+        await client.sendMessage(remoteJid, {
+            text: stylizedChar("❌ Fournis un titre de musique.\nEx: play calm down")
+        }, { quoted: message })
+        return
+    }
 
     try {
-        const query = text.split(/\s+/).slice(1).join(' ')
-        if (!query) {
-            await client.sendMessage(remoteJid, {
-                text: stylizedChar('❌ Fournis un titre de vidéo.')
-            })
-            return
-        }
-
-        console.log('🎯 Recherche :', query)
-
         await client.sendMessage(remoteJid, {
-            text: stylizedChar(`🔎 Recherche : ${query}`),
-            quoted: message
-        })
+            text: stylizedChar(`🔎 Recherche : ${query}`)
+        }, { quoted: message })
 
+        // 🔍 SEARCH API
         const searchUrl = `https://apis.davidcyriltech.my.id/play?query=${encodeURIComponent(query)}`
-        const searchResponse = await axios.get(searchUrl, { timeout: 10000 })
+        const { data } = await axios.get(searchUrl, { timeout: 15000 })
 
-        if (!searchResponse.data.status || !searchResponse.data.result) {
-            throw new Error('Vidéo non trouvée.')
+        if (!data?.status || !data?.result) {
+            throw new Error("Aucun résultat trouvé")
         }
 
-        const videoData = searchResponse.data.result
-        const videoUrl = videoData.url || videoData.download_url
+        const video = data.result
+        const videoUrl = video.url || video.download_url
 
         if (!videoUrl) {
-            throw new Error('URL de téléchargement non disponible.')
+            throw new Error("URL vidéo invalide")
         }
 
-        const apiUrl = `https://youtubeabdlpro.abrahamdw882.workers.dev/?url=${encodeURIComponent(videoUrl)}`
-        
+        // 🎧 AUDIO API
+        const audioUrl = `https://youtubeabdlpro.abrahamdw882.workers.dev/?url=${encodeURIComponent(videoUrl)}`
+
+        const thumbnail =
+            video.thumbnail ||
+            "https://i.imgur.com/4M34hi2.png"
+
+        // 🖼️ INFO MESSAGE
         await client.sendMessage(remoteJid, {
-            image: { url: videoData.thumbnail },
-            caption: `🎵 *${videoData.title}*\n⏱️ ${videoData.duration || 'Inconnu'}\n👁️ ${videoData.views || 'Inconnu'} vues\n\n© Digital Crew 243`,
-            quoted: message
-        })
+            image: { url: thumbnail },
+            caption:
+                `🎵 *${video.title || "Titre inconnu"}*\n` +
+                `⏱️ ${video.duration || "Inconnu"}\n` +
+                `👁️ ${video.views || "Inconnu"} vues\n\n` +
+                `© Digital Crew 243`
+        }, { quoted: message })
+
+        // 🎶 AUDIO SEND
+        await client.sendMessage(remoteJid, {
+            audio: { url: audioUrl },
+            mimetype: "audio/mpeg",
+            ptt: false
+        }, { quoted: message })
+
+        console.log("✅ MUSIC SENT :", video.title)
+
+    } catch (err) {
+        console.error("❌ PLAY ERROR :", err.message)
 
         await client.sendMessage(remoteJid, {
-            audio: { url: apiUrl },
-            mimetype: 'audio/mp4',
-            ptt: false,
-            quoted: message
-        })
-
-        console.log('✅ Audio envoyé :', videoData.title)
-
-    } catch (error) {
-        console.error('❌ Erreur play :', error.message)
-        await client.sendMessage(remoteJid, {
-            text: stylizedChar('❌ Erreur de téléchargement.')
-        })
+            text: stylizedChar(
+                "❌ Impossible de télécharger la musique.\n" +
+                "⏳ Réessaie avec un autre titre."
+            )
+        }, { quoted: message })
     }
 }
 
