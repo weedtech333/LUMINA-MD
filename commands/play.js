@@ -1,3 +1,4 @@
+
 import stylizedChar from "../utils/fancy.js"
 import axios from "axios"
 
@@ -12,67 +13,76 @@ export async function play(message, client) {
     const query = rawText.split(/\s+/).slice(1).join(" ").trim()
 
     if (!query) {
-        await client.sendMessage(remoteJid, {
-            text: stylizedChar("❌ Fournis un titre de musique.\nEx: play calm down")
-        }, { quoted: message })
-        return
+        return client.sendMessage(
+            remoteJid,
+            { text: stylizedChar("❌ Fournis un titre.\nEx: play calm down") },
+            { quoted: message }
+        )
     }
 
     try {
-        await client.sendMessage(remoteJid, {
-            text: stylizedChar(`🔎 Recherche : ${query}`)
-        }, { quoted: message })
+        await client.sendMessage(
+            remoteJid,
+            { text: stylizedChar(`🔎 Recherche : ${query}`) },
+            { quoted: message }
+        )
 
-        // 🔍 SEARCH API
-        const searchUrl = `https://apis.davidcyriltech.my.id/play?query=${encodeURIComponent(query)}`
-        const { data } = await axios.get(searchUrl, { timeout: 15000 })
+        // 🔍 SEARCH
+        const search = await axios.get(
+            `https://apis.davidcyriltech.my.id/play?query=${encodeURIComponent(query)}`,
+            { timeout: 15000 }
+        )
 
-        if (!data?.status || !data?.result) {
-            throw new Error("Aucun résultat trouvé")
+        if (!search.data?.status || !search.data?.result) {
+            throw new Error("Aucun résultat")
         }
 
-        const video = data.result
+        const video = search.data.result
         const videoUrl = video.url || video.download_url
+        if (!videoUrl) throw new Error("URL invalide")
 
-        if (!videoUrl) {
-            throw new Error("URL vidéo invalide")
-        }
-
-        // 🎧 AUDIO API
-        const audioUrl = `https://youtubeabdlpro.abrahamdw882.workers.dev/?url=${encodeURIComponent(videoUrl)}`
-
-        const thumbnail =
-            video.thumbnail ||
-            "https://i.imgur.com/4M34hi2.png"
-
-        // 🖼️ INFO MESSAGE
+        // 🖼️ INFO
         await client.sendMessage(remoteJid, {
-            image: { url: thumbnail },
+            image: { url: video.thumbnail },
             caption:
-                `🎵 *${video.title || "Titre inconnu"}*\n` +
-                `⏱️ ${video.duration || "Inconnu"}\n` +
-                `👁️ ${video.views || "Inconnu"} vues\n\n` +
-                `© Digital Crew 243`
+                `🎵 *${video.title}*\n` +
+                `⏱️ ${video.duration}\n` +
+                `👁️ ${video.views} vues`
         }, { quoted: message })
 
-        // 🎶 AUDIO SEND
-        await client.sendMessage(remoteJid, {
-            audio: { url: audioUrl },
-            mimetype: "audio/mpeg",
-            ptt: false
-        }, { quoted: message })
+        // 🎧 AUDIO DOWNLOAD (BUFFER)
+        const audioRes = await axios.get(
+            `https://youtubeabdlpro.abrahamdw882.workers.dev/?url=${encodeURIComponent(videoUrl)}`,
+            {
+                responseType: "arraybuffer",
+                timeout: 30000
+            }
+        )
 
-        console.log("✅ MUSIC SENT :", video.title)
+        await client.sendMessage(
+            remoteJid,
+            {
+                audio: Buffer.from(audioRes.data),
+                mimetype: "audio/mpeg"
+            },
+            { quoted: message }
+        )
+
+        console.log("✅ PLAY OK :", video.title)
 
     } catch (err) {
-        console.error("❌ PLAY ERROR :", err.message)
+        console.error("❌ PLAY ERROR :", err)
 
-        await client.sendMessage(remoteJid, {
-            text: stylizedChar(
-                "❌ Impossible de télécharger la musique.\n" +
-                "⏳ Réessaie avec un autre titre."
-            )
-        }, { quoted: message })
+        await client.sendMessage(
+            remoteJid,
+            {
+                text: stylizedChar(
+                    "❌ Téléchargement échoué.\n" +
+                    "🔁 Réessaie avec un autre titre."
+                )
+            },
+            { quoted: message }
+        )
     }
 }
 
